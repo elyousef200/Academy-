@@ -15,7 +15,7 @@
     }
         
 .background{
-background:url(images/background.jfif);
+background-color: #9f1e1e;
 background-repeat:no-repeat;
 background-size:cover ;
 background-position: center center;
@@ -170,10 +170,12 @@ font-size: 33px;
 .project{
     margin: 40px;
     margin-top: 200px;
-    box-shadow: 0 15px 25px black;
+    margin-left:100px;
+    box-shadow: 0 15px 25px rgb(23, 116, 183);
     width: 350px;
     height: 450px;
     display: inline-block;
+    text-align: center;
 
 }
 
@@ -209,9 +211,11 @@ font-size: 33px;
 
 .road2{
     margin: 10px; 
-    background-image: url(images/background.jfif); 
+    background-image: url(images/back2.gif); 
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    box-shadow: 0px 15px 25px white;
+    box-shadow: 0px 15px 25px rgb(150, 73, 73);
+    background-size: cover;
 }
 
 .contact{
@@ -288,41 +292,42 @@ font-size: 33px;
 }
 
 @media (max-width: 1023px){
-    .head{
     
-    background-color: #201c1c;
-    background-size: cover;
-    height: 55px;
-    font-size: 20px;
+    .background{
+        height: 3200px;
+        width: 150%;
+        padding-top: 100px;
+    }
+    .head{
+        margin-left: 0px;
+        width: 120em;
+        background-color: #2d2b2b;
+        height: 150px;
 
+    }
+    .title{
+        margin-left: 750px;
+        width: 650px;
+        margin-top: 50px;
+        font-size: 50px;
+        margin-right: 450;
+        padding-top: 40px;
 
+    }
 
+    .address{
+        margin-left: 0px;
+        width: 550px;
+    }
 
-}
-
-
-.title{
-color: rgb(227, 214, 214);
-background-color: #030101;
-margin-left:350px;
-margin-right:px;
-margin-top:0px;
-font-size: 20px;
-text-align: center;
-
-
-}
-
-
-.linkes a{
+    .linkes a{
 
 margin-left:70px;
-margin-top: 30px;
 background-color: rgb(115, 98, 176);
 color:white;
 padding-left: 30 px;
 text-decoration: none;
-font-size:30px;
+font-size:60px;
 border-radius: 5px;
 text-align: center;
 transition: 0.7s ease;
@@ -332,11 +337,22 @@ transition: 0.7s ease;
 
 }
 
-.aim{
-margin-left:165px;
+.linkes a:hover{
+color: rgb(0, 0, 0);
+font-size: 65px;
+background-color: cadetblue;
+border-radius: 40%;
+}
 
-margin-top:200px;
-font-size: 30px;
+
+
+
+
+    .aim{
+margin-left:500px;
+
+margin-top:500px;
+font-size: 70px;
 color: blue;
 background-color:#383131;
 border-radius:25%;
@@ -348,19 +364,21 @@ width:647px
 
 .job{
 margin-top: 10px;
-margin-left:60px;
+margin-left:10px;
+margin-right:150px;
 background-color:#383131;
 background-attachment: fixed;
 color:rgb(72, 72, 148);
 text-align:center;
-width:860px;
-height: 250px;
-font-size: 30px;
+width:1400px;
+height: 650px;
+font-size: 55px;
 border-right: #9f1e1e solid;
 border-left: #938a8a solid;
 border-top: #9f1e1e solid;
 border-bottom: #938a8a solid;
 border-radius: 5%;
+padding-top: 50px;
 
 
 
@@ -369,62 +387,67 @@ border-radius: 5%;
 road a{
 text-decoration: none;
 color:white;
-margin-left:330px;
+margin-left:70px;
 background-color: rgb(115, 98, 176);
-font-size: 30px;
+font-size: 75px;
 transition: 0.7s ease;
 border-radius: 25%;
+margin-top:600px;
 }
 
-
+road :hover{
+color: rgb(0, 0, 0);
+background-color: cadetblue;
+font-size: 80px;
+}
 
 .content{
     display: flex;
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
-    
+ }
+
+
+ .card{
+    box-shadow: 0 15px 25px rgb(1 1 1 /15);
+    padding: 15px;
+    margin-left: 40%;
+    font-size: 30px;
+    text-align:center;
+    width: 600px;
+   
 }
 
 
+.road2{
+    width:2000px;
+    padding-left: 250px;
+    justify-content: center;
+    flex-direction: column;
+    height: 1000px;
+    height: 3000px;
+}
+
 .project{
-    margin-left: 250px;
-    margin-top: 100px;
+    margin-left: 10%;
+    margin-top: 300px;
     box-shadow: 0 15px 25px black;
-    width: 350px;
+    width: 450px;
     height: 450px;
     display: inline-block;
     display: flex;
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
-
+    text-align: center center;
+    padding: 50px;
 }
 
 
-.contact .social a{
-    font-size: 40px;
-    text-decoration: none;
-    margin-left:200px;
-    margin-top: 400px;
-    color:#eee;
-    transition: 0.7s ease;
-    padding-left: 5px;
-    padding-right: 5px;
-    text-align: center;
+.contact{
+    width:3000px;
 }
-
-
-.mine{
-    font-size: 20px;
-    margin-left:300px ;
-    box-shadow: 0px 5px 35px white;
-    width: 350px;
- }
-
-
-
-
 
 
 
@@ -465,21 +488,25 @@ border-radius: 25%;
             </p>
             <br>
             
-            <div class = "linkes">
-                <a href="#contact">تابعنا</a>
-                <a href="#achievement">انجازات</a>
-                <a href="#practis">اكتسب</a>
-                
-            </div>     
+               
         
 
             
     </header>
+   
 
 
 
       <section class = "background">
-        <br><br><br>
+        <br><br><br><br>
+
+        <div class = "linkes">
+            <a href="#contact">تابعنا</a>
+            <a href="#achievement">انجازات</a>
+            <a href="#practis">اكتسب</a>
+            
+        </div>  
+        
    
    
      <p class = "aim" id="roat">
@@ -487,21 +514,29 @@ border-radius: 25%;
         الشركات والجامعات العالميه لانشاء جيل<br>
         عربي قادر علي المنافسة في <br>السوق العالمي
      </p>
-     
+     <br><br><br><br><br><br><br><br>
 
      <p class = "job">
         تقدم اكاديمية أل يوسف تجربة تعلم متميزة من خلال مجموعة من الدروس والمناهج الاحترافية<br> بجودة عالية وأسلوب تدريسي ممتع يتناسب مع مختلف الطرق التعليمية للمبتدئين والمحترفين بإشراف<br> مدربين ومبرمجين ذوي خبرة عالمية في المجال التقني، تعمل اكاديمية اليوسف للبرمجة كجسر يربط<br> العقول التكنولوجية العربية في المهجر بالطلبة العرب أينما كانوا.
 
      </p>
-     <br>
+     <br><br><br><br><br> <br><br><br><br> <br><br><br><br>
+     <br><br><br><br> <br><br><br><br> <br><br><br><br>
+     
      <road>
      <a href = "#roat">المسارات التعليميه</a>
     </road>
+    <br><br><br><br> <br><br><br><br> <br><br><br><br>
+    <br><br><br><br> <br><br><br><br> <br><br><br><br>
     </section> 
 
 
 
     <!--الكروت-->
+    <br></br>    <br></br>
+    <br></br>
+    <br></br>
+
      
   <section class = "cards" id="achievement">
     <div class = "content">
@@ -540,12 +575,14 @@ border-radius: 25%;
     
 
   </section>
-
+  <br></br>    <br></br>
+  <br></br>
+  <br></br>
   <section class = "road2" id="practis">
 
     <div class = "project">
         <div class = "imge">
-            <img src = "images/project1 1.jpg">
+            <img src = "images/project1 1.jfif">
         </div>
         <div class = "titlee">
             <h1 class = "starting"> CSS وال HTML اساسيات ال</h1>
@@ -559,7 +596,7 @@ border-radius: 25%;
 
     <div class = "project">
         <div class = "imge">
-            <img src = "images/project2.jpg">
+            <img src = "images/project2.png">
         </div>
         <div class = "titlee">
             <h1 class = "starting">مقدمة لمحرك الالعاب Unity</h1>
@@ -573,7 +610,7 @@ border-radius: 25%;
 
     <div class = "project">
         <div class = "imge">
-            <img src = "images/project3.png">
+            <img src = "images/project3.jfif">
         </div>
         <div class = "titlee">
             <h1 class = "starting"> مقدمة للبرمجة بشكل كامل</h1>
@@ -587,9 +624,15 @@ border-radius: 25%;
 
   
     </div>
+    <br><br><br><br>
 
 
   </section>
+  <br><br><br>  <br><br><br>
+  <br><br><br>
+  <br><br><br>
+  <br><br><br>
+
 
  
 
